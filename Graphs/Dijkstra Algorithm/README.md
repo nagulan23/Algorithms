@@ -14,7 +14,7 @@ First line contains number of vertex and edges and the following lines contain u
 3 4 4  
 4 5 7  
 3 5 6   
-![input](Graphs/Cache%20for%20images/Screenshot%202020-12-28%20191009.png)
+![input](https://github.com/nagulan23/Algorithms/blob/main/Graphs/Cache%20for%20images/Screenshot%202020-12-28%20191009.png)
 ## Output
 
 Weight of shortest path between 0 and 0 is 0  
@@ -23,4 +23,4 @@ Weight of shortest path between 0 and 2 is 4
 Weight of shortest path between 0 and 3 is 3  
 Weight of shortest path between 0 and 4 is 7  
 Weight of shortest path between 0 and 5 is 9  
-![output](Graphs/Cache%20for%20images/Screenshot%202020-12-28%20191129.png)
+![output](https://github.com/nagulan23/Algorithms/blob/main/Graphs/Cache%20for%20images/Screenshot%202020-12-28%20191129.png)
