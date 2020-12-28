@@ -14,7 +14,7 @@ First line contains number of vertex and edges and the following lines contain u
 3 4 4  
 4 5 7  
 3 5 6   
-![input](Graphs/Cache for images/Screenshot 2020-12-28 191009.png)
+![input](Graphs/Cache for images/Screenshot%202020-12-28%20191009.png)
 ## Output
 
 Weight of shortest path between 0 and 0 is 0  
