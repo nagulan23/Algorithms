@@ -1,4 +1,8 @@
 
+## Complexity
+
+Time Complexity = O( E log V )  
+
 ## Input
 
 First line contains number of vertex and edges and the following lines contain u, v, w
