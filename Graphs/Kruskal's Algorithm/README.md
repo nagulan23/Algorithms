@@ -1,3 +1,7 @@
+## Complexity
+
+Time Complexity = O( E log E + E log V ) --> Sort edges + Disjoint set operation
+
 ## Input
 
 First line contains number of vertex and edges and the following lines contain u, v, w
