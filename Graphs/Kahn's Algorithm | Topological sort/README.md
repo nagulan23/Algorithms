@@ -1,3 +1,7 @@
+## Complexity
+
+Time Complexity = O( V+E )
+
 ## Input
 
 First line contains number of vertex and edges and the following lines contain u, v ( Directed Acyclic graph )
