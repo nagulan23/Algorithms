@@ -1,4 +1,9 @@
 
+## Complexity
+
+Time Complexity = O( V<sup>3</sup> )  
+Space Complexity = O( V<sup>2</sup> )
+
 ## Input
 
 First line contains number of vertex and edges and the following lines contain u, v, Is a Directed Graph?
