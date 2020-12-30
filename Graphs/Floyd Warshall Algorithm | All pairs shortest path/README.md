@@ -14,13 +14,13 @@ First line contains number of vertex and edges and the following lines contain u
 ## Output
 
 Given graph:  
-0	3	∞	5	  
-2	0	∞	8	  
-∞	1	0	∞	 
-∞	∞	2	0	 
+0	3	∞	5   
+2	0	∞	8   
+∞	1	0	∞  
+∞	∞	2	0  
   
-Shortest path between any two vertices:  
-0	3	7	5	 
-2	0	9	7	 
-3	1	0	8	 
+Shortest path between any two vertices:   
+0	3	7	5  
+2	0	9	7  
+3	1	0	8  
 5	3	2	0  
