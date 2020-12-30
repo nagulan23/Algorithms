@@ -34,5 +34,5 @@ First line contains number of vertex and edges and the following lines contain u
 [2, 8, 2]  
 [2, 3, 7]  
 [3, 4, 9]  
-Weight of MST = 37
+Weight of MST = 37  
 ![output](https://github.com/nagulan23/Algorithms/blob/main/Graphs/Cache%20for%20images/Screenshot%202020-12-28%20192253.png)
