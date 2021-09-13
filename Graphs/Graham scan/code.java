@@ -36,10 +36,8 @@ class Solution {
             return(trees);
         }
         int[] lowestPoint={200,200};
-        int maxX=Integer.MIN_VALUE;
         int i,or;
         for(i=0;i<trees.length;i++){
-            maxX=Math.max(maxX,trees[i][0]);
             if(lowestPoint[1]>trees[i][1]){
                 lowestPoint[0]=trees[i][0];
                 lowestPoint[1]=trees[i][1];
@@ -51,7 +49,13 @@ class Solution {
                 }
             }
         }
-        final int rightMostX=maxX;
+        double maxAngle=0;
+        for(i=0;i<trees.length;i++){
+            if(lowestPoint[1]!=trees[i][1] || lowestPoint[0]!=trees[i][0]){
+                maxAngle=Math.max(maxAngle,findSingleAngle(lowestPoint,trees[i]));
+            }
+        }
+        final double maxA=maxAngle;
         Arrays.sort(trees,new Comparator<int[]>(){
            public int compare(int[] e1,int[] e2){
                double a1=findSingleAngle(lowestPoint,e1);
@@ -61,24 +65,20 @@ class Solution {
                else if(a1<a2)
                    return(-1);
                else{
-                   if(e1[0]==e2[0]){
-                       if(e1[0]==rightMostX){
-                           if(e1[1]>e2[1])
-                               return(1);
-                           else
-                               return(-1);
-                       }
-                       else{ 
-                            if(e1[1]<e2[1])
-                               return(1);
-                           else
-                               return(-1);
-                       }
-                   }    
-                   else if(e1[0]>e2[0])
-                        return(1);
-                    else
-                        return(-1);
+                   int d1=Math.abs(lowestPoint[0]-e1[0])+Math.abs(lowestPoint[1]-e1[1]);
+                   int d2=Math.abs(lowestPoint[0]-e2[0])+Math.abs(lowestPoint[1]-e2[1]);
+                   if(a1==maxA){
+                       if(d1<d2)
+                           return(1);
+                       else
+                           return(-1);
+                   }
+                   else{
+                       if(d1>d2)
+                           return(1);
+                       else
+                           return(-1);
+                   }
                }
            } 
         });
